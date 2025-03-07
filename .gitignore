@@ -1,0 +1,12 @@
+# Node-Module nicht pushen
+node_modules/
+
+# Playwright Test-Reports nicht pushen
+playwright-report/
+test-results/
+
+# Debug Screenshots nicht pushen
+*.png
+
+# Umgebungsdateien (falls vorhanden)
+.env
