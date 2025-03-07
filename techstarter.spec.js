@@ -9,7 +9,7 @@ test('Techstarter Webseite Grundfunktionen', async ({ page }) => {
   if (await acceptCookiesButton.isVisible()) {
     console.log('Cookie-Banner gefunden, akzeptiere Cookies...');
     await acceptCookiesButton.click();
-    await page.waitForTimeout(1000);
+    await acceptCookiesButton.waitFor({ state: 'hidden', timeout: 5000 });
   }
 
   // **Warten auf Hauptinhalt**
